@@ -123,7 +123,7 @@ def step(status):
 
 version = opts.version.rsplit(".", 1)[0]  # Last digit is ours
 version = version.replace(".", "-")  # Rez to GitHub tag
-url = "https://github.com/lukesampson/scoop/archive/%s.zip" % version
+url = "https://github.com/ScoopInstaller/Scoop/archive/%s.zip" % version
 for status in github_download(url, scoop_dir):
     step(status)
 
